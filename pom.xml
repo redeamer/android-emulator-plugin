@@ -19,6 +19,13 @@
       <email>chris@orr.me.uk</email>
       <timezone>1</timezone>
     </developer>
+
+    <developer>
+      <id>redeamer</id>
+      <name>Michael Musenbrock</name>
+      <email>michael.musenbrock@gmail.com</email>
+      <timezone>2</timezone>
+    </developer>
   </developers>
 
   <licenses>
@@ -73,31 +80,24 @@
   </build>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/android-emulator-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/android-emulator-plugin.git</developerConnection>
+    <connection>scm:git:git://github.com/redeamer/android-emulator-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:redeamer/android-emulator-plugin.git</developerConnection>
+    <url>https://github.com/redeamer/android-emulator-plugin</url>
     <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
     <repository>
-      <id>maven.jenkins-ci.org</id>
-      <url>http://maven.jenkins-ci.org:8081/content/repositories/releases/</url>
+      <id>jenkins.repo.release</id>
+      <name>Repository for Releases</name>
+      <url>file:///home/michael/work/jenkins-update-center/releases</url>
     </repository>
+    <snapshotRepository>
+      <id>jenkins.repo.snapshot</id>
+      <name>Repository for Snapshots</name>
+      <url>file:///home/michael/work/jenkins-update-center/snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
-
-  <repositories>
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </pluginRepository>
-  </pluginRepositories>
 
 </project>  
   
